@@ -8,10 +8,11 @@ var secondsLeft = 10;
 
 var questions = [
     {
-        title: "how many apples do i have?",
+        title: "What language family does English belong to?",
         answers: [1,2,3,4],
-        correctAnswer: 2
+        correctAnswer: 1
     }
+    
 ]
 var questionIndex = 0;
 
@@ -25,7 +26,7 @@ function timerThing(){
 
 var timer = setInterval(timerThing, 500);
 
-var question = $("#question").text("watermelon")
+var question = $("#question").text("Ready to Start the Quiz?")
 console.log(question)
 
 $(".startButton").click(function(){
@@ -38,4 +39,4 @@ $(".startButton").click(function(){
 
 $(".answer").click(function(){
     $(this)
-});
+})
