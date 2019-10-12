@@ -11,8 +11,22 @@ var questions = [
         title: "What language family does English belong to?",
         answers: [1,2,3,4],
         correctAnswer: 1
-    }
-    
+    },
+    {
+        title: "The words cow and beef are from what languages respectively?",
+        answers: [1,2,3,4],
+        correctAnswer: 1
+    }, 
+    {
+        title: "What alphabet does English use?",
+        answers: [1,2,3,4],
+        correctAnswer: 2
+    },  
+    {
+        title: "Generally, why does English have French in it?",
+        answers: [1,2,3,4],
+        correctAnswer: 2
+    },
 ]
 var questionIndex = 0;
 
