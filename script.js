@@ -41,7 +41,7 @@ function timerThing(){
 var timer = setInterval(timerThing, 500);
 
 var question = $("#question").text("Ready to Start the Quiz?")
-console.log(question)
+var answer = $(".correctAnswer")
 
 $(".startButton").click(function(){
     $("#main").show();
