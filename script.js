@@ -4,27 +4,29 @@
 // timer
 // store high scores
 
-var secondsLeft = 10;
+var secondsLeft = 100;
+var goodAnswers = 0;
+var badAnswers = 0;
 
 var questions = [{
         title: "What language family does English belong to?",
-        answers: [1, 2, 3, 4],
-        correctAnswer: 1
+        answers: ["Romantic","Germanic", "Semitic", "Dravidian"],
+        correctAnswer: "Germanic"
     },
     {
         title: "The words cow and beef are from what languages respectively?",
-        answers: [1, 2, 3, 4],
-        correctAnswer: 1
+        answers: ["French/German", "French/Itallic", "Italian/Etruscan", "German/French"],
+        correctAnswer: "German/French"
     },
     {
         title: "What alphabet does English use?",
-        answers: [1, 2, 3, 4],
-        correctAnswer: 2
+        answers: ["Romantic", "Germanic", "Devanagari", "Etruscan"],
+        correctAnswer: "Romantic"
     },
     {
         title: "Generally, why does English have French in it?",
-        answers: [1, 2, 3, 4],
-        correctAnswer: 2
+        answers: ["because of the pangea", "The Norman invasion","Because the French are french", "because the English are obsessed with the French"],
+        correctAnswer: "The Norman invasion"
     }
 ]
 
@@ -82,3 +84,7 @@ $(".answer").click(function () {
 function end() {
     console.log("end func")
 }
+
+
+
+// add local storage bit and content and then we are done baby! 
