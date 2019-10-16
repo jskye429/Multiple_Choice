@@ -8,6 +8,7 @@ var secondsLeft = 100;
 var goodAnswers = 0;
 var badAnswers = 0;
 
+
 var questions = [{
         title: "What language family does English belong to?",
         answers: ["Romantic","Germanic", "Semitic", "Dravidian"],
@@ -65,13 +66,15 @@ $(".answer").click(function () {
     if (guess === questions[questionIndex].correctAnswer) {
         console.log("good job")
         goodAnswers++;
+        scores+25
 
     } else {
         console.log("bad")
         badAnswers++;
         secondsLeft = secondsLeft - 15;
-        // secondsLeft -= 15;
+        
         }
+    console.log(scores)
 
     if (questionIndex === questions.length - 1) {
         console.log("gameover")
@@ -88,3 +91,7 @@ function end() {
 
 
 // add local storage bit and content and then we are done baby! 
+// Store
+// localStorage.setItem("lastname", "Smith");
+// Retrieve
+// document.getElementById("result").innerHTML = localStorage.getItem("lastname");
